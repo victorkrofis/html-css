@@ -1,0 +1,20 @@
+/* texte de css external */
+
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color: green;
+}
+
+ul{
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+li{
+    color: blue;
+}
+
+/* regra de segurança, cuidado com o conteudo dos comentarios pois aparece no DevTolls */
