@@ -1,0 +1,68 @@
+/* background img */
+.bgimage{
+    background-image: url(../img/tecnologia.PNG);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* centralizar o background image */
+/* aplicando regra de estilo para dois elementos de uma vez */
+
+.bgimage-naocentralizado, .bgimage-centralizado{
+    background-image: url(../img/Senaclargotreze.PNG);
+    height: 400px;
+    width: 400px;
+    
+}
+
+.bgimage-centralizado{
+    background-position: center;
+    background-size: cover;
+}
+
+/* video com background */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.video-background{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#meuvideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+p{
+    font-size: 1.5em;
+}

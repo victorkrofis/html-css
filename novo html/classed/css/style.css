@@ -5,3 +5,25 @@
     color: yellow;
     padding: 5px;
 }
+
+/* ID */
+
+#titulo-com-id{
+    background-color: blue;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* regras */
+h1{
+    border-bottom: 2px solid blue;
+}
+
+.classe-titulo{
+    border-bottom: 3px solid red;
+}
+
+#id-titulo{
+    border-bottom: 3px solid black;
+}
