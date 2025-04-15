@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/formularios/css/style.css">
+</head>
+<body>
+    <h1>formularios</h1>
+    <form action="registro.php" method="GET">
+        <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>
+
+        <!-- atributo name -->
+         <div>
+            <label>Idade:</label>
+            <input type="text" name="age">
+         </div>
+
+         <!-- atributo label -->
+          <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+          </div>
+
+          <!-- select -->
+           <div>
+            <label for="cidade">selecione sua cidade</label>
+            <select name="cidade" id="">
+                <option value="sao paulo">sao paulo</option>
+                <option value="taboao da serra">taboao da serra</option>
+                <option value="osasco">osasco</option>
+            </select>
+           </div>
+
+           <!-- selected -->
+           <div>
+            <label for="Seleção">Quem vai ganhar a próxima copa do mundo?</label>
+ 
+ 
+            <select name="Times">
+                <option value="Argentina">Argentina</option>
+                <option value="Franca">França</option>
+                <option value="Alemanha">Alemanha</option>
+                <option value="Brasil" selected>Brasil</option>
+                <option value="Inglaterra">Inglaterra</option>
+            </select>
+          </div>
+            <!-- seleao de varios select - multiplos -->
+             <div>
+                <label for="ACESSORIOS">selecione os acessorios do seu computador</label>
+                <select name="acessorios" multiple >
+                    <option value="Mouse">Mouse</option>
+                    <option value="Teclado">Teclado</option>
+                    <option value="Fone de ouvido">Fone de ouvido</option>
+                    <option value="Webcam">Webcam</option>
+                </select>
+             </div>
+
+             <!-- texarea -->
+              <div><label for="fedback">descreva o seu fedback sobre o curso</label>
+                <textarea name="feedback" ></textarea>
+            </div>
+
+            <!-- fildset w legend -->
+             <div>
+                <fieldset>
+                    <legend>insira seu endereco</legend>
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua">
+                    <label for="bairro">bairro</label>
+                    <input type="text" name="bairro">
+                </fieldset>
+             </div>
+
+             <!-- detalist -->
+              <div>
+                <label for="livro">selecione sue livro</label>
+                <input type="text" list="livros" name="livro">
+              </div>
+
+              <datalist id="livros">
+                <option value="crepusculo">crepusculo</option>
+                <option value="harry potter">harry potter</option>
+                <option value="A hospedeira">A hospedeira</option>
+                <option value="harry potter 2">harry potter 2</option>
+              </datalist>
+
+              <!-- password -->
+               <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha">
+               </div>
+
+               <!-- input radio -->
+                <div>
+                    <label for="genero">qual é a sua identidade de genero</label>
+                    <div class="radio">
+                        <input type="radio" value="mulher" name="genero">
+                        <label for="mulher">mulher</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" value="homem" name="genero">
+                        <label for="homem">homem</label>
+                    </div>
+
+                    <div class="radio">
+                        <label for="outros">outros</label>
+                        <input type="radio" value="outros" name="genero">
+                    </div>
+                </div>
+
+                <!-- imput checkbox -->
+                 <div>
+                    <label for="idiomas">qual idioma voce pretende estudar?</label>
+                    <!-- reaproveitando cs da class radio -->
+                    <div class="radio">
+                        <input type="checkbox" name="idiomas" value="ingles">
+                        <label for="ingles">ingles</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="idiomas" value="russo">
+                        <label for="russo">russo</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="checkbox" name="idioma" value="alemao">
+                        <label for="alemao">alemao</label>
+                    </div>
+                 </div>
+
+                 <!-- imput data -->
+                  <div>
+                    <label for="datanascimento">data de nascimento</label>
+                    <input type="date" name="datanascimento">
+                  </div>
+
+                  <!-- input file -->
+                   <div>
+                    <label for="arquivo">insira seu curriculo em pdf</label>
+                    <input type="file" name="arquivo">
+                   </div>
+
+                   <!-- input number -->
+                    <div>
+                        <label for="number">coloque o numero aqui</label>
+                        <input type="number" name="number">
+                    </div>
+
+                    <!-- input email -->
+                     <div>
+                        <label for="email">qual seu email?</label>
+                        <input type="email" name="email">
+                     </div>
+
+                     <!-- imput value -->
+                      <div>
+                        <label for="aula">assitiu?</label>
+                        <input type="text" value="comfirmar que assitiu" name="aula">
+                      </div>
+
+                      <!-- input disable -->
+                       <div>
+                       <p>informe seu rg:</p>
+                       <input type="text" value="nao precisa prencher" disabled>
+                       </div>
+
+                       <!-- input placeholder -->
+                        <div>
+                            <label for="pesquisa">como achou nosso site?</label>
+                            <input type="text" name="pesquisa" placeholder="google ou intagram">
+                        </div>
+
+                        <!-- required -->
+                         <div>
+                            <label for="sobrenome">digite o seu sobrenome</label>
+                            <input type="text" name="sobrenome" placeholder="sobrenome completo" required>
+                         </div>
+
+               <!-- limpando/resetando o formulario -->
+                <input type="reset" value="limpar">
+
+          <!-- submit botao -->
+           <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
